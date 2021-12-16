@@ -2,10 +2,10 @@ import express, { response } from 'express';
 import bcrypt, { compareSync } from 'bcrypt';
 import cors from 'cors';
 import knex from 'knex';
-import Register from './Controllers/Register.js';
-import Signin from './Controllers/Signin.js';
-import Image from './Controllers/Image.js';
-import Profile from './Controllers/Profile.js';
+import Register from './Controllers/Register.mjs';
+import Signin from './Controllers/Signin.mjs';
+import Image from './Controllers/Image.mjs';
+import Profile from './Controllers/Profile.mjs';
 
 const db= knex({
     client: 'pg',
